@@ -2,16 +2,16 @@ import streamlit as st
 import requests
 
 
-# def send_request(text, length):
-#     api_url = 'https://main-ainize-tutorial-server-scy6500.endpoint.ainize.ai/predict'
-#     files = {
-#         'base_text': (None, text),
-#         'length': (None, length),
-#     }
-#     response = requests.post(api_url, files=files)
-#     status_code = response.status_code
+def send_request(text, length):
+    api_url = 'https://master-marketing-slogan-generator-backend-vanshika2703.endpoint.ainize.ai/predict'
+    files = {
+        'base_text': (None, text),
+        'length': (None, length),
+    }
+    response = requests.post(api_url, files=files)
+    status_code = response.status_code
 
-#     return status_code, response
+    return status_code, response
 
 
 st.title("Market Slogan Generator")
